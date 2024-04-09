@@ -1,0 +1,63 @@
+
+div.mother {
+background-color: rgb(206, 206, 206);
+margin-left: 20%; 
+/* отступ слева */
+margin-right: 20%;
+/* отступ справа */
+}
+
+
+div.son {
+    padding: 10px 30px 10px 20px;
+    /* отступы со всех сторон */
+}
+
+
+    .title {
+    color: rgb(54, 54, 189);
+    text-align: center;
+    /*расположение текста*/
+    font-style: normal;
+    /*шрифты*/
+    }
+
+
+    .tlt {
+    color: rgb(118, 120, 156);
+    text-align: left;
+    font-style: normal;
+    }
+
+
+    .txt {
+    color: black;
+    text-align: left;
+    font-style: normal;
+    font-size: medium;
+    /*размер текста*/
+    line-height: 20px;
+    /*расстояния между строками*/
+    max-width: 400px;
+    /*сжатие текста из сторон*/
+    font-weight: lighter;
+    /*толщина шрифта*/
+    }
+
+
+    .coment {
+    color: black;
+    text-align: left;
+    font-style: italic;
+    font-size: 1cap;
+    font-weight: lighter;
+    }
+
+
+   .dialoge {
+    color: black;
+    text-align: left;
+    font-style: normal;
+    font-size: 90%;
+    font-weight: lighter;
+    }

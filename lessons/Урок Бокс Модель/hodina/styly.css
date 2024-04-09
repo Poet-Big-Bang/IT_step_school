@@ -1,0 +1,23 @@
+h1 {
+    background-color: brown;
+    width: 500px;
+    height: 70px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 40px;
+    /* display: inline; */
+}
+p{
+    background-color: blueviolet;
+}
+
+span {
+    background-color: aqua;
+    /* display: block; */
+    /* этой командой из линейного элемента делается блоковый и наоборот */
+    margin: 40px;
+    /* марджин можно писать на лево и на право */
+    /* padding: 40px; */
+    /* падинг нельзя писать у линейных объект */
+}
+

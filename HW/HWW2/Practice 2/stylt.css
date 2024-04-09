@@ -1,0 +1,27 @@
+.mother{
+    background-color: rgb(215, 214, 214);
+    margin-left: 20%; 
+    margin-right: 40%;
+}
+
+
+.son{
+    padding: 10px 30px 10px 20px
+}
+
+
+h1{
+    font-size: 130%;
+    text-align: left;
+    font-style: normal;
+}
+
+
+ol li::marker {
+    font-weight: bold;
+    color: black;
+  }
+  
+  ol li {
+    color: rgb(40, 40, 144);
+  }

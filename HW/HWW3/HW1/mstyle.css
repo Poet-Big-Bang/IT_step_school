@@ -1,0 +1,29 @@
+
+nav {
+    background-color: #e7e6e6;
+    margin: 1vw;
+    padding: 2vw;
+    width: 25vw;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 25vw;
+        background-color: #808080;
+        color: white;
+        font-size: 2vw;
+        list-style-type: none;
+    }
+    
+    nav img {
+        width: 5vw;
+        margin: 1vw;
+        padding: 1vw;
+        vertical-align: middle;
+    
+    }
+    
+    li:hover {
+        background-color: #5E5E5E;
+    }

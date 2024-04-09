@@ -1,0 +1,68 @@
+div.mother {
+    background-color: rgb(227, 225, 225);
+    padding-right: 90px ;
+    /* margin-left: 10%;  */
+    /* отступ слева */
+     margin-right: 400px; 
+    /* отступ справа */
+    }
+    
+    
+    div.son {
+        /* padding: 10px 20px 10px 20px; */
+        /*отступы со всех сторон*/
+        /* padding-right: 200px; */
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        padding-left: 40px;
+    }
+
+    ul{
+        /* padding-right: 300px; */
+    }
+
+    li {
+        background-color: gray;
+        list-style-position: inside;
+        padding-left: 40px;
+        list-style-type: none;
+    }
+    li.light {
+        background-color: rgb(37, 128, 225);
+    }
+    li.dark {
+        background-color: rgb(50, 94, 197);
+        
+    }
+    span.do {
+        text-decoration: line-through;
+    }
+    li.dark::before {
+        content: url(unchecked_16.png);
+        padding-right: 10px;
+
+    }
+    li.light::before {
+        content: url(unchecked_16.png);
+        padding-right: 10px;
+
+    }
+    li.do::before {
+        content:url(checked_16.png);
+        padding-right: 10px;
+    }
+    
+    span.x {
+        list-style-type: none;
+    }
+    span.x::after {
+        content: "❌";
+        font-size: 15%;
+        padding-left: 3%;
+        /* vertical-align: baseline */
+        /* vertical-align: middle; */
+        vertical-align: 4px;
+        
+    }
