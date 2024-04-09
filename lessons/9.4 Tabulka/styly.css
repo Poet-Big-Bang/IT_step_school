@@ -1,0 +1,21 @@
+table{
+    width: 80px;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: aqua;
+}
+
+tr:nth-child(2n+1){
+    background-color: gray;
+    text-align: center;
+    /* vertical-align: */
+}
+
+td{
+    height: 20px;
+    line-height: 12px;
+}
+
+/* с помощью дивф тэхэд я могу выполнить задание и зафиксировать голову таблицыю */
