@@ -1,0 +1,55 @@
+.obdelnik {
+    width: 400px;
+    height: 150px;
+    border: 3px solid black;
+    line-height: 150px;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.cerveny {
+    background-color: rgb(228, 49, 49);
+}
+
+.zeleny {
+    background-color: rgb(20, 239, 20);
+}
+.modry{
+background-color: blue;
+}
+
+/* !!!!Media query надо сесть и почитать что все оно умеет!!!! */
+@media (max-width: 500px) {
+    /*значения максимальная ширина обычно делаются при декстоп фёрст дизайнах.  */
+    .reklama {
+        display: none;
+    }
+}
+@media(min-width: 700px){
+     /*значения минимальной ширины обычно делаются при мобайл фёрст дизайнах.  */
+    .modry{background-color: orange;}
+}
+
+@media(min-width: 800px) and (max-width: 1000px){
+     /*значения максимальная и минимальная ширина обычно делаются при бэйзик фёрст дизайнах. 
+     !!!!!И лучше всего именно так делать!!!! */
+    .modry{
+        background-color: rgb(30, 255, 0);
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1100px){
+    body{
+        display: flex;
+        /* Дисплэй флекс здесь будет работать только до 1100px. если бы я не дал макимальную величину, то оно бы не выключилось самостоятельно. */
+    }
+}
+
+@media(min-width: 1100px){
+    .cerveny{
+        font-weight: bold;
+        display: block
+        /* Или если вот так выключить в ручную дисплэй флекс. */
+    }
+    }
