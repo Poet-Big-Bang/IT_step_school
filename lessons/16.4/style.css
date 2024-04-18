@@ -1,0 +1,48 @@
+.obdelnik {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+ .oranzovy {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+.obdelnik:first-child {
+    background-color: red;
+}
+
+.obdelnik:nth-child(2) {
+    background-color: rgb(55, 255, 0);
+}
+
+.obdelnik:nth-child(3) {
+    background-color: rgb(30, 0, 255);
+}
+
+
+
+
+
+.obdelnik {
+    position: ;
+}
+
+/* 
+.zeleny{
+    position: relative;
+    left: 150px;
+    top: 50px;
+} */
+
+.zeleny {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+

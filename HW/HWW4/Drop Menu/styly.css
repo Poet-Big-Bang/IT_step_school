@@ -17,13 +17,27 @@ ul {
     background-color: #808080;
     color: white;
     list-style-type: none;
+    overflow: hidden;
+    /* обязательно изучить что делает оверфлоу и оверфлоу хидден */
 }
 
 
 ul:hover {
-    width: 10vw;
+    width: 16vw;
     transition-duration: 1.5s;
+    /* 1
+    overflow: hidden; */
 }
+
+/* 2
+.invisible{
+    display: none;
+}
+3
+ul:hover .invisible{
+    display: block;
+} */
+/* надо обязательно посмотреть дома что делают обозначеные 123 коментарии */
 
 
 menu {
