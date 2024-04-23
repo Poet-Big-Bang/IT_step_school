@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+
+<body>
+    <h1>Formulare</h1>
+    <form action="result.html" method="post">
+        <label for="Имя">Введите имя</label>
+        <input type="text" name="Имя" id="Имя">
+        <br>
+        <label for="Фамилия">Введите фамилию</label>
+        <input type="text" name="Фамилия" id="Фамилия">
+        <br>
+        <label for="Адресс">Введите адресс</label>
+        <input type="text" name="Адресс" id="Адресс" placeholder="Имя">
+        <br>
+        <label for="Род">Вы мужчина?</label>
+        <input type="checkbox" name="Rod" id="Род">
+        <br>
+        <input type="email" name="email" id="email" placeholder="fucking email">
+        <br>
+        <input type="password" name="password" id="password" placeholder="fucking password">
+        <br>
+        <input type="number" name="tel.number" id="age" placeholder="motherfucking tel.number">
+        <br>
+        <input type="date" name="date" id="date">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <label for="muz">MUZ</label>
+        <input type="radio" value="muz" id="muz" name="gender">
+        <br>
+        <label for="zena">ZENA</label>
+        <input type="radio" value="zena" id="zena" name="gender">
+        <!-- от валью сервер поймет, что это. и отобразит это на сервере. а от айди браузер поймет что это и предложит тебе варианты. -->
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value=" послать нахуй">
+        <!-- В тэге форм, атрибуте метод можно посылать на сервер информацию 2мя способами. GET и POST из них ГЕТ это открытое посылание, где твои данные укажутся в адресной строке, а ПОСТ это закрытое и данные пошлются закрытыми и объявятся только на сервере-->
+        <!-- Обязательно надо писать отрибут нэйм иначе при отсылании на сервер сервер не поймет, что это и не отобразит -->
+        <!-- Очень сильно важно правильно задавать инпуты. особенно для мобильных вэб сайтов -->
+        <!-- у инпута мэйл, твой браузер поймет что это мэйл только за счет айди где ты укажешь, что это мэйл -->
+        <!-- в инпуте класс сабмит, что бы изменить текст нужно использовать атрибут валью -->
+        <!-- АТрибут фор на лэйбле связывается с атрибутом айди где угодно -->
+        <!-- Атрибут плэйсхолдер дает надпись внутрь которая не осязаемая и исчезает когда начинаешь писать -->
+    </form>
+</body>
+
+</html>
