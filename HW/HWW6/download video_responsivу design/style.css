@@ -98,12 +98,13 @@ input{
 
 @media (min-width: 800px) {
     .gray_background{
-        height: 20vh;
+        height: 22vh;
         width: 98vw;
     }
     .mother_block {
         flex-direction: row;
         width: 100%;
+        /* height: 120%; */
         padding: 0;
     }
     .img_container{
