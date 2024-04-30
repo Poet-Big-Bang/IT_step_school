@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 200px;
+}
+
+.tvar {
+    width: var(--width);
+    margin: 70px;
+}
+
+.obdelnik {
+    width: calc(var(--width) * 1.2);
+    height: calc(var(--width) * .6);
+}
+
+.ctverec, .kolecko {
+    height: var(--width);;
+}
+
+.kolecko {
+    border-radius: 50%;
+}
+
+.cerveny {
+    background-color: #be4d25;
+}
+
+.zeleny {
+    background-color: #49be25;
+}
+
+.modry {
+    background-color: #2596be;
+}
+
+
+/* ****************************************************** */
+.ctverec{
+    transform: translate(100px, 60px) rotate(20deg);
+}
+
+.obdelnik:hover{
+    /* transform: rotate(20deg) scale(2) translateX(100px); */
+    /* НУЖНО ОБЯЗАТЕЛЬНО на порядок написания обращать внимание. в зависимости от порядка написания он сначала сделает например сначала повернет, потом отсунется на 100 пикселей или наоборот */
+    /* transform: scale(2); */
+    /* transform: skew(40deg, 20deg); */
+    transform: rotate(60deg);
+    background-color: aquamarine;
+    transition: transform .3s, background-color .5s;
+    /* когда пишешь транзишн то можно задать время для перехода. например если написать транзишн трансформ то время будет касаться только трансформа, а остальные эффекты будут мгновенно */
+}
+
+.obdelnik{
+    transition: transform 0.3s, background-color 0.5s;
+}
+/* таким образом делается обратная от ховер анимация. не так как я писал до этого через нотховер */
+
+.kolecko{
+    transition: transform 3s 0s, background-color 5s 3s;
+    /* 1 время пишется для того что бы задать сколько секунд будет длиться анимация, а 2 время пишется для того, что бы задать задержку. в данном случае у юэкграунд колор 5 секунд длится смена, но через 3 секунды начинается  */
+}
+
+.kolecko:hover{
+    transform: scale(3);
+    background-color: black;
+}
+
+button{
+    background-color: red;
+    font-size: 20px;
+    color: gray;
+    padding: 20px;
+    border-radius: 5%;
+    border: 0;
+    margin-left: 50px;
+    box-shadow: 15px 15px 15px 0px gray;
+    transition: all 0.15s;
+}
+
+button:active{
+    /* вместо ховер можно использовать эктив! тогда это будет работать только когда нажмешь на кнопку */
+    transform: translate(15px, 15px);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+/* Для трансформации не нужно использовать позишн!!!! */
