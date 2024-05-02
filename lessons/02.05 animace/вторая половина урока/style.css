@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+img{
+    width: 500px;
+    height: 300px;
+}
+
+.gallery{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.obrazek{
+    position: relative;
+    overflow: hidden;
+}
+
+.obrazek img{
+    display: block;
+    transition: transform .5s;
+}
+
+.obrazek:hover img{
+    transform: scale(1.25);
+    /* transform-origin:100% 100%;
+    таким образом можно редактировать центрирование при трансформ скэйл. это нужно например когда главный объект картинки не в центре */
+}
+
+.comment{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    transform: translateY(100%);
+}
+
+.hlavni{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.obrazek:hover .comment{
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
