@@ -3,7 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(/Step_Project/img/Blue\ Purple\ Simple\ Elegant\ Background\ Instagram\ Story.png);
+    background-size: cover;
 
+}
 
 header {
     /* position: fixed; */
@@ -88,3 +92,133 @@ img.cart {
     margin: 20px;
     justify-content: space-around;
 }
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 100 3fr ;
+    grid-template-rows: repeat(2, 550px);
+    /* gap: 10px; */
+    grid-template-areas: "taste taste taste"
+                         "story menu interior"
+}
+
+
+.gallery-item:nth-child(1){
+    grid-area: taste;
+}
+
+.gallery-item:nth-child(2){
+    grid-area: story;
+}
+.gallery-item:nth-child(3){
+    grid-area: menu;
+}
+
+.gallery-item:nth-child(4){
+    grid-area: interior;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .text-overlay { */
+    position: absolute;
+    color: rgb(13, 12, 12);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .text-overlay {
+    opacity: 1;
+}
+/* 
+.gallery-item .image1 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.image2,
+.image3,
+.image4 {
+    grid-row: span 1;
+    grid-column: span 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video-container {
+    position: relative;
+    width: 560px;
+    height: 315px;
+  }
+  
+  #myVideo {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #video-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-family: 'Yellowtail', cursive;
+    font-size: 400%;
+  }
+  
+  #myVideo:focus + #video-title,
+  #myVideo:active + #video-title {
+    opacity: 0;
+  }
