@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RamenJa</title>
     <link rel="stylesheet" href="/Step_Project/styles/style.css">
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Zeyada&display=swap" rel="stylesheet">
@@ -24,50 +22,139 @@
 
     </header>
     <hr>
+
     <nav class="pages">
-        <div><a href="index.html">HOME</a></div>
-        <div><a href="reservation.html" target="_blank">RESERVATION</a></div>
-        <div><a href="contacts.html" target="_blank">CONTACTS</a></div>
-        <div><a href="menu.html" target="_blank">ORDER ONLINE</a></div>
-        <div><a href="/Step_Project/pages/cart.html" target="_blank"><img class="cart" src="/Step_Project/img/cart.png"
-                    alt=""></a>
+        <div><a class="a-pages" href="index.html">HOME</a></div>
+        <div><a class="a-pages" href="reservation.html" target="_blank">RESERVATION</a></div>
+        <div><a class="a-pages" href="contacts.html" target="_blank">CONTACTS</a></div>
+        <div><a class="a-pages" href="menu.html" target="_blank">ORDER ONLINE</a></div>
+        <div><a class="a-pages" href="/Step_Project/pages/cart.html" target="_blank"><img class="cart"
+                    src="/Step_Project/img/cart.png" alt=""></a>
         </div>
     </nav>
-<!--     
-    <nav class="pictures">
-        <h1 class="taste">THE TASTE OF ASIA</h1>
-        <div class="img-container"></div>
-    </nav>
-    <nav class="pictures">
-       
-        </div>
-    </nav> -->
-
-
-
 
 
     <div class="gallery">
         <div class="gallery-item image1">
             <img src="/Step_Project/img/the-taste-of-asia.jpg" alt="Image 1">
-            <div class="text-overlay"><h2>THE TASTE OF ASIA</h2></div>
+            <div class="text-overlay">
+                <h2>THE TASTE OF ASIA</h2>
+            </div>
         </div>
         <div class="gallery-item image2">
             <img src="/Step_Project/img/stories.jpg" alt="Image 2">
-            <div class="text-overlay"><H2>STORY</H2></div>
+            <div class="text-overlay">
+                <h2>STORY</h2>
+            </div>
         </div>
-        <div class="gallery-item image3">
+        <div class="gallery-item image3" onclick="scrollToElement('.menu-grid')">
             <img src="/Step_Project/img/interier.jpg" alt="Image 3">
-            <div class="text-overlay">MENU</div>
+            <div class="text-overlay">
+                <h2>MENU</h2>
+            </div>
         </div>
         <div class="gallery-item image4">
             <img src="/Step_Project/img/menu.jpg" alt="Image 4">
-            <div class="text-overlay">INTERIOR</div>
+            <div class="text-overlay">
+                <h2>INTERIOR</h2>
+            </div>
         </div>
     </div>
 
 
 
+    <main>
+        <div class="video-container">
+            <video id="myVideo" width="" height="" controls poster="/Step_Project/img/prev.jpg">
+                <source src="/Step_Project/video/Our Kitchen.mp4" type="video/mp4">
+            </video>
+            <h2 id="video-title">Our kitchen</h2>
+        </div>
+
+
+        <h1 class="about">ABOUT US</h1>
+        <h1 class="menu">OUR RAMEN MENU</h1>
+        <h3 class="menu">the taste of asia</h3>
+        <h3 class="price">- 250kč</h3>
+
+        <div class="menu-grid">
+                <div class="card-menu" style="width: 18rem;">
+                    <div class="img"><img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="..."></div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-text">NARUTO</h5>
+                        <p class="card-text">PORK BROTH, NOODLES, TEA PICKLED EGG, 5 SPICES PORK BELLY, MISO, GARLIC,
+                            GINGER, BAMBOO SHOOTS, NORI SEAWEED</p>
+                            <p class="card-text">-250kč</p>
+                    </div> 
+                </div>
+
+
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SHOYU BEEF TERIYAKI</h5>
+                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                            SESAME,EDAMAME, PICKLED RADISH, GINGER, AONORI SEAWEED</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SPICY PUMPKIN</h5>
+                        <p class="card-text">FRIED PUMPKIN / ROLLED PORK BELLY, VEGGIE BROTH, PUMPKIN, COCONUT MILK,
+                            CURRY, NOODLES, TEA PICKLED EGG, PICKLED RED ONION, CORIANDER, SEEDS</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SPARTAK</h5>
+                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+                <div class="card-menu" style="width: 18rem;">
+                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                            <p class="card-text">-250kč</p>
+                    </div>
+                </div>
+            </div>
+    </main>
 
 
 
@@ -78,33 +165,23 @@
 
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('myVideo').addEventListener('play', function () {
+                document.getElementById('video-title').style.opacity = 0;
+            });
+        });
+
+        function scrollToElement(selector) {
+            var element = document.querySelector(selector);
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="video-container">
-        <video id="myVideo" width="560" height="315" controls poster="/Step_Project/img/prev.jpg">
-            <source src="/Step_Project/video/Our Kitchen.mp4" type="video/mp4">
-            Ваш браузер не поддерживает тег video.
-        </video>
-        <h2 id="video-title">Our kitchen</h2>
-    </div>
-
-    <link rel="stylesheet" href="/Step_Project/js/script.js">
-</body>
+    <!-- <script src="script.js"></script> -->
+    <!-- <link rel="stylesheet" href="/Step_Project/js/script.js"> -->
+    <!-- <script src="js/script.js"></script>
+</body> -->
 
 </html>
