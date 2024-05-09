@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    /* gap: 10px; */
+}
+li{
+    list-style-type: none;
+    /* padding: 10px; */
+    background-color: aqua;
+    border: 2px solid black;
+    border-right:0 ;
+}
+li:last-child{
+    border-right:2px solid black;
+}
+li:hover{
+    background-color: blue;
+}
+
+a{
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    padding: 10px;
+}
+
+li:hover a{
+    color: white;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* у позишн фиксед обязательно нужно наставлять топ и лефт иначе он будет считаться с чужими марджинами и не будет знать где ему быть */
+}
+
+p{
+    margin: 50px;
+}
