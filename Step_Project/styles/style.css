@@ -221,6 +221,7 @@ h3.menu {
     text-align: center;
     font-weight: bold;
     font-family: 'Yellowtail', cursive;
+    margin-bottom: 50px;
 }
 h3.price {
     color: white;
@@ -314,9 +315,6 @@ h3.price {
 
 
 
-
-
-
 .video-container {
     /* display: flex; */
     position: relative;
@@ -350,3 +348,192 @@ h3.price {
   #myVideo:active + #video-title {
     opacity: 0;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .card-about-us {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    /* max-width: 600px; */
+    /* height: 400px; */
+    /* max-height: 400px; */
+    margin: 50px;
+}
+
+.card-about-us img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.card-about-us-content {
+    flex: 1;
+    margin-right: 16px;
+    position: relative;
+}
+
+.hidden-text {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 3s ease;
+    overflow: scroll;
+    scrollbar-color: hsl(100%, 93%, 46%);
+
+    @supports (scrollbar-gutter: stable) {
+        overflow: auto;
+        scrollbar-gutter: stable;
+    }
+}
+
+.hidden-text::-webkit-scrollbar {
+    width: 5px;
+    /* height: 5px; */
+}
+
+.hidden-text::-webkit-scrollbar-thumb {
+    background: #4c7ad8;
+    border-radius: 20px;
+}
+
+.hidden-text::-webkit-scrollbar-track {
+    background-color:#FE5998;
+    border-radius: 10%;
+}
+
+.show .hidden-text {
+    display: block;
+    max-height: 1000px;
+    /* Set a large max-height to reveal content */
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #4c7ad8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover{
+    transform: scale(1.1);
+    background-color: #FE5998;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vibe {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Yellowtail', cursive;
+    margin: 100px;
+}
+
+
+.slideshow {
+    position: relative;
+    gap: 20px;
+    width: 90%;
+    margin: 50px;
+    display: flex;
+    overflow: hidden;
+}
+.slideshow img {
+    width: 50%;
+    display: none;
+}
+.slideshow img.active {
+    display: block;
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+#prevBtn {
+    left: 10px;
+}
+#nextBtn {
+    right: 10px;
+    /* background-image:url(/Step_Project/img/free-icon-right-arrow-545783.png) ; */
+}
+#nextBtn img{
+    width: 50px;
+}
+
+
+.image-button {
+    width: 40px;
+    background-image: url('/Step_Project/img/free-icon-right-arrow-545783.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+

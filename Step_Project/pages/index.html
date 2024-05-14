@@ -41,19 +41,19 @@
                 <h2>THE TASTE OF ASIA</h2>
             </div>
         </div>
-        <div class="gallery-item image2">
+        <div class="gallery-item image2" onclick="scrollToElement('h1.about')">
             <img src="/Step_Project/img/stories.jpg" alt="Image 2">
             <div class="text-overlay">
                 <h2>STORY</h2>
             </div>
         </div>
-        <div class="gallery-item image3" onclick="scrollToElement('.menu-grid')">
+        <div class="gallery-item image3" onclick="scrollToElement('h1.menu')">
             <img src="/Step_Project/img/interier.jpg" alt="Image 3">
             <div class="text-overlay">
                 <h2>MENU</h2>
             </div>
         </div>
-        <div class="gallery-item image4">
+        <div class="gallery-item image4" onclick="scrollToElement('h1.vibe')">
             <img src="/Step_Project/img/menu.jpg" alt="Image 4">
             <div class="text-overlay">
                 <h2>INTERIOR</h2>
@@ -73,87 +73,183 @@
 
 
         <h1 class="about">ABOUT US</h1>
+        <div class="card-about-us">
+            <div class="card-about-us-content">
+                <div class="text-container">
+                    <p class="summary-text">The Story of "RamenJa" Restaurant</p>
+                    <div class="hidden-text">
+                    <h2>Chapter 1: The Beginning</h2>
+                    <p>In the small Armenian town of Abovyan lived a young man named Spartak. From a young age, he
+                        loved watching his grandmother cook traditional Armenian dishes. He especially loved the kharcho
+                        soup, which his grandmother made according to a special family recipe. However, Spartak was
+                        always open to new culinary experiences and dreamed of trying his hand at different cuisines.
+                        One day, after tasting ramen at a rare Japanese restaurant in Yerevan, he became fascinated with
+                        the idea of making it himself.</p>
+
+
+                    <h2>Chapter 2: Seeking Inspiration</h2>
+                    <p>After finishing school, Spartak went to Tokyo to study culinary arts. He worked in various
+                        restaurants, learning the secrets of making ramen. In one of the old ramen shops, he met Master
+                        Haruto, who became his mentor. Haruto taught Spartak not only the technique but also the
+                        philosophy of cooking: "Ramen is not just a soup, it's a soul poured into every bowl."</p>
+
+                    <h2>Chapter 3: Returning Home</h2>
+                    <p>Gaining experience, Spartak returned to his hometown of Abovyan and started making ramen for his
+                        friends and family. His recipes quickly became popular, and many suggested he open his own
+                        restaurant. Spartak dreamed of sharing his culinary art with as many people as possible, and
+                        soon he had the opportunity to move to Europe.</p>
+
+                    <h2>Chapter 4: Prague – A New Home</h2>
+                    <p>Spartak chose Prague, the capital of the Czech Republic, for his new venture. The city, rich in
+                        history and culture, attracted many tourists, making it an excellent place to open a restaurant.
+                        While searching for a suitable location, Spartak met Dmitry, a talented marketer from Russia,
+                        who shared his passion for ramen. Dmitry had years of experience working in various European
+                        restaurants and was looking for a new challenge. They quickly became friends and decided to open
+                        the restaurant together.</p>
+
+                    <p>Spartak and Dmitry found a cozy location in the city center and started renovations. Dmitry
+                        developed a marketing strategy to attract attention to their new establishment, while Spartak
+                        focused on the culinary aspect. They named their restaurant "RamenJa" – combining the Japanese
+                        ramen and the Armenian "ja" (meaning "my" in Armenian), symbolizing the fusion of two cultures.
+                    </p>
+
+                    <h2>Chapter 5: The Opening of the Restaurant</h2>
+                    <p>On the day of the "RamenJa" opening, Spartak and Dmitry were very nervous. Spartak carefully
+                        prepared all the ingredients according to the best Japanese recipes, adding touches of Armenian
+                        cuisine, while Dmitry ensured everyone knew about the opening. In the evening, the restaurant
+                        was filled with guests, including locals and tourists. One guest, a Japanese man, even remarked
+                        that their ramen reminded him of home, which was the highest praise for the young entrepreneurs.
+                    </p>
+
+                    <h2>Chapter 6: The Path to Success</h2>
+                    <p>"RamenJa" quickly became a popular spot in Prague. Spartak constantly experimented, adding new
+                        dishes and improving old recipes, while Dmitry developed and refined the marketing strategy.
+                        They created unique ramen dishes with local Czech and Armenian ingredients, attracting both
+                        locals and tourists. Their restaurant became known not only for its delicious food but also for
+                        its warm atmosphere, where every guest felt at home.</p>
+                    <h2>Chapter 7: New Horizons</h2>
+                    <p>Over time, Spartak and Dmitry decided to expand their business. They opened several "RamenJa"
+                        branches in other European cities, and then overseas. Despite the success and expansion, they
+                        always remembered their roots and strived to preserve the traditions passed down by their
+                        families and Master Haruto.</p>
+
+                    <h3>Today, "RamenJa" is not just a chain of restaurants but a symbol of love for Japanese cuisine
+                        and respect for Armenian and Russian traditions. Spartak and Dmitry continue to develop their
+                        business, staying true to their principle: "Every bowl of ramen must be made with soul."</h3></div>
+                </div>
+                <button class="learn-more" onclick="toggleText(this)">Learn More</button>
+            </div>
+            <div class="img-about-us"><img src="/Step_Project/img/about us.jpeg" alt="Image description"></div>
+
+        </div>
         <h1 class="menu">OUR RAMEN MENU</h1>
         <h3 class="menu">the taste of asia</h3>
-        <h3 class="price">- 250kč</h3>
 
         <div class="menu-grid">
-                <div class="card-menu" style="width: 18rem;">
-                    <div class="img"><img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="..."></div>
-                    
-                    <div class="card-body">
-                        <h5 class="card-text">NARUTO</h5>
-                        <p class="card-text">PORK BROTH, NOODLES, TEA PICKLED EGG, 5 SPICES PORK BELLY, MISO, GARLIC,
-                            GINGER, BAMBOO SHOOTS, NORI SEAWEED</p>
-                            <p class="card-text">-250kč</p>
-                    </div> 
-                </div>
+            <div class="card-menu" style="width: 18rem;">
+                <div class="img"><img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="..."></div>
 
-
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
-                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
-                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
-                </div>
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SHOYU BEEF TERIYAKI</h5>
-                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
-                            SESAME,EDAMAME, PICKLED RADISH, GINGER, AONORI SEAWEED</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
-                </div>
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SPICY PUMPKIN</h5>
-                        <p class="card-text">FRIED PUMPKIN / ROLLED PORK BELLY, VEGGIE BROTH, PUMPKIN, COCONUT MILK,
-                            CURRY, NOODLES, TEA PICKLED EGG, PICKLED RED ONION, CORIANDER, SEEDS</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
-                </div>
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SPARTAK</h5>
-                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
-                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
-                </div>
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
-                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
-                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
-                </div>
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
-                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
-                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
-                </div>
-                <div class="card-menu" style="width: 18rem;">
-                    <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
-                        <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
-                            SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
-                            <p class="card-text">-250kč</p>
-                    </div>
+                <div class="card-body">
+                    <h5 class="card-text">NARUTO</h5>
+                    <p class="card-text">PORK BROTH, NOODLES, TEA PICKLED EGG, 5 SPICES PORK BELLY, MISO, GARLIC,
+                        GINGER, BAMBOO SHOOTS, NORI SEAWEED</p>
+                    <p class="card-text">-250kč</p>
                 </div>
             </div>
+
+
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF TERIYAKI</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,EDAMAME, PICKLED RADISH, GINGER, AONORI SEAWEED</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SPICY PUMPKIN</h5>
+                    <p class="card-text">FRIED PUMPKIN / ROLLED PORK BELLY, VEGGIE BROTH, PUMPKIN, COCONUT MILK,
+                        CURRY, NOODLES, TEA PICKLED EGG, PICKLED RED ONION, CORIANDER, SEEDS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SPARTAK</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu" style="width: 18rem;">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="vibe">Our VIBE</h1>
+        <div class="slideshow">
+            <img src="/Step_Project/img/interior1.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior2.jpeg" class="img-slide">
+            <img src="/Step_Project/img/interior3.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior4.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior5.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior6.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior7.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior8.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior9.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior10.jpg" class="img-slide">
+            <button class="image-button" id="prevBtn"> </button>
+            <button class="image-button" id="nextBtn"> </button>
+        </div>
+        <script src="script.js"></script>
+        <!-- <div class="interior-gallery-flex">
+            <img src="/Step_Project/img/interior1.jpg" alt="">
+            <img src="/Step_Project/img/interior2.jpeg" alt="">
+            <img src="/Step_Project/img/interior3.jpg" alt="">
+            <img src="/Step_Project/img/interior4.jpg" alt="">
+            <img src="/Step_Project/img/interior5.jpg" alt="">
+            <img src="/Step_Project/img/interior6.jpg" alt="">
+            <img src="/Step_Project/img/interior7.jpg" alt="">
+            <img src="/Step_Project/img/interior8.jpg" alt="">
+            <img src="/Step_Project/img/interior9.jpg" alt="">
+            <img src="/Step_Project/img/interior10.jpg" alt="">
+        </div> -->
     </main>
 
 
@@ -165,23 +261,9 @@
 
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById('myVideo').addEventListener('play', function () {
-                document.getElementById('video-title').style.opacity = 0;
-            });
-        });
-
-        function scrollToElement(selector) {
-            var element = document.querySelector(selector);
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    </script>
 
 
-    <!-- <script src="script.js"></script> -->
-    <!-- <link rel="stylesheet" href="/Step_Project/js/script.js"> -->
-    <!-- <script src="js/script.js"></script>
-</body> -->
+    <script src="/Step_Project/js/script.js"></script>
+</body>
 
 </html>
