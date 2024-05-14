@@ -527,9 +527,17 @@ h3.price {
 }
 
 
-.image-button {
+.image-button-left {
     width: 40px;
-    background-image: url('/Step_Project/img/free-icon-right-arrow-545783.png');
+    background-image: url('/Step_Project/img/left.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+.image-button-right{
+    width: 40px;
+    background-image: url('/Step_Project/img/right.png');
     background-size: cover;
     background-position: center;
     border: none;
