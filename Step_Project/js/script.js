@@ -1,15 +1,34 @@
-
+// ЭТО ОТВЕЧАЕТ ЗА ТО ЧТО БЫ ВИДЕО ТИТРЫ ИСЧЕЗЛИ ПРИ ЗАПУСКЕ ВИДЕО
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('myVideo').addEventListener('play', function () {
                 document.getElementById('video-title').style.opacity = 0;
             });
         });
 
+
+// ЭТО ОТВЕЧАЕТ ЗА ТО ЧТО БЫ ВИДЕО ЗАПУСКАЛОСЬ, ДАЖЕ ПРИ НАЖАТИИ НА ТИТРЫ
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById("myVideo");
+            var videoTitle = document.getElementById("video-title");
+        
+            videoTitle.addEventListener("click", function() {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+
+
+// ЭТО ТО ЧТО ОТВЕЧАЕТ ЗА ВЕРТИКАЛЬНЫЙ НАВИГАЦИОННЫЙ СКРОЛЛ
         function scrollToElement(selector) {
             var element = document.querySelector(selector);
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
- 
+
+
+// ЭТО ТО ЧТО ОТВЕЧАЕТ ЗА КНОПКУ 'Learn More' В БЛОКЕ 'About Us'
         function toggleText(button) {
             var cardContent = document.querySelector('.card-about-us-content');
             cardContent.classList.toggle('show');
@@ -20,32 +39,8 @@
             }
         }
 
-        // let slideIndex = 0;
-        // showSlides();
         
-        // function showSlides() {
-        //   let i;
-        //   const slides = document.getElementsByClassName("img-slide");
-        //   for (i = 0; i < slides.length; i++) {
-        //     slides[i].style.display = "none";
-        //   }
-        //   slideIndex++;
-        //   if (slideIndex > slides.length) {
-        //     slideIndex = 1;
-        //   }
-        //   slides[slideIndex - 1].style.display = "block";
-        //   setTimeout(showSlides, 2000); // Change image every 2 seconds
-        // }
-        
-        // document.getElementById("prevBtn").addEventListener("click", () => {
-        //   slideIndex--;
-        //   showSlides();
-        // });
-        
-        // document.getElementById("nextBtn").addEventListener("click", () => {
-        //   slideIndex++;
-        //   showSlides();
-        // });
+// ЭТО ТО ЧТО ОТВЕЧАЕТ ПЕРЕЛИСТЫВАНИЕ СЛАЙДОВ В БЛОКЕ 'Interior'
         let currentSlide = 0;
         const slides = document.querySelectorAll('.img-slide');
         const totalSlides = slides.length;
@@ -66,8 +61,6 @@
             slides[currentSlide].classList.add('active');
             slides[(currentSlide + 1) % totalSlides].classList.add('active');
         }
-    
-        // Initialize the first two slides as active
         slides[currentSlide].classList.add('active');
         slides[(currentSlide + 1) % totalSlides].classList.add('active');
 
