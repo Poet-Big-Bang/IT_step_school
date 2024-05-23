@@ -52,7 +52,10 @@
         document.getElementById('prevBtn').addEventListener('click', function() {
             changeSlide(-1);
         });
-    
+       
+        slides[currentSlide].classList.add('active');
+        slides[(currentSlide + 1) % totalSlides].classList.add('active');
+        
         function changeSlide(direction) {
             for (let i = 0; i < slides.length; i++) {
                 slides[i].classList.remove('active');
@@ -61,6 +64,4 @@
             slides[currentSlide].classList.add('active');
             slides[(currentSlide + 1) % totalSlides].classList.add('active');
         }
-        slides[currentSlide].classList.add('active');
-        slides[(currentSlide + 1) % totalSlides].classList.add('active');
 

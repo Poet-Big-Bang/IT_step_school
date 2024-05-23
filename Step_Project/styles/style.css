@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 4px solid red !important;     'nj' */
 }
 :root{
 --assianFont:'Yellowtail';
@@ -132,7 +133,7 @@ hr{
     cursor: pointer;
     display: grid;
     margin: 50px;
-    grid-template-columns:repeat(3);
+    /* grid-template-columns:repeat(3); */
     grid-template-rows: repeat(2, 550px);
     gap: 20px;
     grid-template-areas: "taste taste taste"
@@ -241,6 +242,7 @@ h1.about {
 .card-about-us {
     display: flex;
     margin: 50px;
+    width: var(100vw - 50px);
 }
 .card-about-us img {
     /* width: 100%; */
@@ -253,23 +255,31 @@ h1.about {
     flex: 1;
     margin-right: 16px;
     position: relative;
+    font-family: var(--storyFont);
+    font-weight: bold;
+    font-size: large;
+    color: var(--olive);
+}
+.summary-text{
+    text-align: center;
+    font-size: larger;
+    font-size: 150%;
+
 }
 .img-about-us{
-    width: 500px;
-    height: 22vh;
+    /* width: 500px; */
+    /* height: 22vh; */
+}
+.hidden-text h3{
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: 150%;
 }
 .hidden-text {
-    color: var(--olive);
-    font-size: large;
-    font-weight: bold;
-    font-family: var(--storyFont);
     display: none;
     overflow: hidden;
-    /* max-height: 0; */
     transition: max-height 3s ease;
     overflow: scroll;
-    /* scrollbar-color: hsl(100%, 93%, 46%); */
-
     @supports (scrollbar-gutter: stable) {
         overflow: auto;
         scrollbar-gutter: stable;
