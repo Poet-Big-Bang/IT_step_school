@@ -1,0 +1,16 @@
+.red {
+    color: red;
+}
+
+.heading {
+    text-decoration: underline;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+[data-petr="nejlepsi"] {
+    padding: 5px;
+    color: #458911
+}
